@@ -1,0 +1,17 @@
+
+*{
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+.mg-top5{
+    margin-top: 5px;
+}
+.img-url{
+    width: 100px;
+}
+.mg-left5{
+    margin-left: 5px ;
+    /* background-color: red; */
+}
