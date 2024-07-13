@@ -1,58 +1,72 @@
 
 import './App.css'
-import { Box, Container, Typography } from "@mui/material";
-import ListTable from "./pages/list";
-import Header from "./compoment/header";
-import Footer from './compoment/footer';
 import { BrowserRouter as Router, Route, Routes, useRoutes } from 'react-router-dom';
-import ProductsCard from './pages/client/productsCard';
-import Detail from './pages/client/detail';
-import AddProduct from './pages/addProduct';
 import NotFoundPage from './pages/notFound';
-const drawerWidth = 240;
+import ClientLayout from './layout/client';
+import ProductsCard from './pages/client/productsCard';
+import AdminPage from './layout/admin';
+import ListTable from './pages/list';
+import Detail from './pages/client/detail';
+import PrivateRoute from './compoment/privateRoter';
+import RegisterPage from './pages/register';
+import LoginPage from './pages/login';
+import TestRe from './pages/registerTest';
 
+// const token = localStorage.getItem('token');
+// const isAdmin = token ? JSON.parse(atob(token.split('.')[1])).role === 'admin' : false;
 
-function App() {
-  let element = useRoutes([
+let element = [
+  {
+    path: "",
+    element: <ClientLayout />,
+    children: [
       {
-        path: "/",
-        element: <ProductsCard />,
+        path: "",
+        element: <ProductsCard />
       },
       {
-        path: "/product/:id",
+        path: "product/:id",
         element: <Detail />
       },
       {
-        path: "/list",
-        element: <ListTable />
+        path: "login",
+        element: <LoginPage />
       },
       {
-        path: "/add",
-        element: <AddProduct />
+        path: "test",
+        element: <TestRe />
       },
       {
-        path: "*",
-        element: <NotFoundPage />
+        path: "register",
+        element: <RegisterPage />
       }
 
-  ])
+    ]
+  },
+  {
+    path: "/admin",
+    element: (<PrivateRoute><AdminPage /></PrivateRoute>),
+    children: [
+      {
+        path: "",
+        element: <ListTable />
+      }
+    ]
+    
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />
+  }
+
+]
+
+function App() {
+  const routes = useRoutes(element);
+
   return (
-    <Box sx={{ display: 'flex' }}>
-      <Box component="main" sx={{ 
-        flexGrow: 1, p: 3, 
-        width: `calc(100% - ${drawerWidth}px)`
-        }}>
-        <Typography paragraph>
-            <Header />
-            <Container sx={{minHeight: 1000}} >
-              <Box my={4}>
-                {element}
-              </Box>
-            </Container>
-            <Footer />
-        </Typography>
-      </Box>
-    </Box>
+    <main>{routes}</main>
+    
   );
 
 

@@ -1,6 +1,6 @@
 // src/components/AddProduct.tsx
 import React, { useEffect, useState } from 'react';
-import { Box,  Typography, Stack, LinearProgress, Grid, IconButton, TextField, Button, AlertTitle, Alert } from '@mui/material';
+import { Box,  Typography,  LinearProgress, Grid, IconButton, TextField, Button, AlertTitle, Alert } from '@mui/material';
 import { Link as RouterLink, useParams } from 'react-router-dom';
 import Product from 'src/types/IProducts';
 import axios from 'axios';

@@ -1,10 +1,10 @@
 // src/components/AddProduct.tsx
 import React, { useEffect, useState } from 'react';
 import { AlertTitle, Box, Card, CardContent, CardMedia, Grid, LinearProgress, Typography } from '@mui/material';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Alert from '@mui/material/Alert';
 import Product from 'src/types/IProducts';
+import axiosInstance from 'src/config/axios';
 
 
 
@@ -17,7 +17,7 @@ const ProductsCard: React.FC = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/products');
+                const response = await axiosInstance.get('/products');
                 setProducts(response.data);
             } catch (err) {
                 setError('Không Thể Kết Nối Với DataBase. Mã Lỗi: '+err);

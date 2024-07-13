@@ -1,22 +1,169 @@
 {
-    "products": [
-        { "id": "1","category": "Xe Điện", "name": "VinFast Vf3", "price": 1000000 , "image": "https://giaxehoi.vn/uploads/Xe/Vinfast/VF-3/Hinh-dai-dien-Vinfast-VF3-Giaxedien-com-1788x1080.png", "desc": "Mot Ta San Pham "},
-        { "id": "2","category": "Xe Điện", "name": "VinFast Vf5", "price": 2000000 , "image": "https://storage.googleapis.com/vinfast-data-01/Orange_1671186677.png", "desc": "Mot Ta San Pham "},
-        { "id": "3","category": "Xe Điện", "name": "VinFast Vfe34", "price": 3000000 , "image": "https://vinfastotominhdao.vn/wp-content/uploads/Brahminy-White-Trang.jpg", "desc": "Mot Ta San Pham "},
-        { "id": "4","category": "Xe Điện", "name": "VinFast Vf6", "price": 4000000 , "image": "https://vinfastquangninh.com.vn/wp-content/uploads/2023/09/tai-xuong-6-min.png", "desc": "Mot Ta San Pham "},
-        { "id": "5", "category": "Xe Điện","name": "VinFast Vf7", "price": 5000000 , "image": "https://vinfastvinh-nghean.com/wp-content/uploads/2022/02/vf7.png", "desc": "Mot Ta San Pham "},
-        { "id": "6","category": "Xe Điện", "name": "VinFast Vf8", "price": 6000000 , "image": "https://vinfastnewway.com.vn/wp-content/uploads/2022/08/vinfast-vf-8-mau-xam.jpg", "desc": "Mot Ta San Pham "},
-        { "id": "7","category": "Xe Điện", "name": "VinFast Vf9", "price": 7000000 , "image": "https://vinfastbinhthanh.com/wp-content/uploads/2024/01/vinfast_vf9_deep_ocean.webp", "desc": "Mot Ta San Pham "},
-        { "id": "8","category": "Xe Điện", "name": "VinFast wild", "price": 8000000 , "image": "https://vietnaminsider.vn/wp-content/uploads/2024/01/IMG_1098.webp", "desc": "Mot Ta San Pham "},
-        { "id": "9","category": "Xe Điện", "name": "VinFast Vf3", "price": 1000000 , "image": "https://giaxehoi.vn/uploads/Xe/Vinfast/VF-3/Hinh-dai-dien-Vinfast-VF3-Giaxedien-com-1788x1080.png", "desc": "Mot Ta San Pham "},
-        { "id": "10","category": "Xe Điện", "name": "VinFast Vf5", "price": 2000000 , "image": "https://storage.googleapis.com/vinfast-data-01/Orange_1671186677.png", "desc": "Mot Ta San Pham "},
-        { "id": "11","category": "Xe Điện", "name": "VinFast Vfe34", "price": 3000000 , "image": "https://vinfastotominhdao.vn/wp-content/uploads/Brahminy-White-Trang.jpg", "desc": "Mot Ta San Pham "},
-        { "id": "12","category": "Xe Điện", "name": "VinFast Vf6", "price": 4000000 , "image": "https://vinfastquangninh.com.vn/wp-content/uploads/2023/09/tai-xuong-6-min.png", "desc": "Mot Ta San Pham "},
-        { "id": "13","category": "Xe Điện", "name": "VinFast Vf7", "price": 5000000 , "image": "https://vinfastvinh-nghean.com/wp-content/uploads/2022/02/vf7.png", "desc": "Mot Ta San Pham "},
-        { "id": "14","category": "Xe Điện", "name": "VinFast Vf8", "price": 6000000 , "image": "https://vinfastnewway.com.vn/wp-content/uploads/2022/08/vinfast-vf-8-mau-xam.jpg", "desc": "Mot Ta San Pham "},
-        { "id": "15","category": "Xe Điện", "name": "VinFast Vf9", "price": 7000000 , "image": "https://vinfastbinhthanh.com/wp-content/uploads/2024/01/vinfast_vf9_deep_ocean.webp", "desc": "Mot Ta San Pham "},
-        { "id": "16", "category": "Xe Điện", "name": "VinFast wild", "price": 8000000 , "image": "https://vietnaminsider.vn/wp-content/uploads/2024/01/IMG_1098.webp", "desc": "Mot Ta San Pham "}
-
-    ]
-  }
-  
+  "products": [
+    {
+      "id": "1",
+      "category": "Xe Điện",
+      "name": "VinFast Vf3",
+      "price": 1000000,
+      "image": "https://giaxehoi.vn/uploads/Xe/Vinfast/VF-3/Hinh-dai-dien-Vinfast-VF3-Giaxedien-com-1788x1080.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "2",
+      "category": "Xe Điện",
+      "name": "VinFast Vf5",
+      "price": 2000000,
+      "image": "https://storage.googleapis.com/vinfast-data-01/Orange_1671186677.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "3",
+      "category": "Xe Điện",
+      "name": "VinFast Vfe34",
+      "price": 3000000,
+      "image": "https://vinfastotominhdao.vn/wp-content/uploads/Brahminy-White-Trang.jpg",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "4",
+      "category": "Xe Điện",
+      "name": "VinFast Vf6",
+      "price": 4000000,
+      "image": "https://vinfastquangninh.com.vn/wp-content/uploads/2023/09/tai-xuong-6-min.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "5",
+      "category": "Xe Điện",
+      "name": "VinFast Vf7",
+      "price": 5000000,
+      "image": "https://vinfastvinh-nghean.com/wp-content/uploads/2022/02/vf7.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "6",
+      "category": "Xe Điện",
+      "name": "VinFast Vf8",
+      "price": 6000000,
+      "image": "https://vinfastnewway.com.vn/wp-content/uploads/2022/08/vinfast-vf-8-mau-xam.jpg",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "7",
+      "category": "Xe Điện",
+      "name": "VinFast Vf9",
+      "price": 7000000,
+      "image": "https://vinfastbinhthanh.com/wp-content/uploads/2024/01/vinfast_vf9_deep_ocean.webp",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "8",
+      "category": "Xe Điện",
+      "name": "VinFast wild",
+      "price": 8000000,
+      "image": "https://vietnaminsider.vn/wp-content/uploads/2024/01/IMG_1098.webp",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "9",
+      "category": "Xe Điện",
+      "name": "VinFast Vf3",
+      "price": 1000000,
+      "image": "https://giaxehoi.vn/uploads/Xe/Vinfast/VF-3/Hinh-dai-dien-Vinfast-VF3-Giaxedien-com-1788x1080.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "10",
+      "category": "Xe Điện",
+      "name": "VinFast Vf5",
+      "price": 2000000,
+      "image": "https://storage.googleapis.com/vinfast-data-01/Orange_1671186677.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "11",
+      "category": "Xe Điện",
+      "name": "VinFast Vfe34",
+      "price": 3000000,
+      "image": "https://vinfastotominhdao.vn/wp-content/uploads/Brahminy-White-Trang.jpg",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "12",
+      "category": "Xe Điện",
+      "name": "VinFast Vf6",
+      "price": 4000000,
+      "image": "https://vinfastquangninh.com.vn/wp-content/uploads/2023/09/tai-xuong-6-min.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "13",
+      "category": "Xe Điện",
+      "name": "VinFast Vf7",
+      "price": 5000000,
+      "image": "https://vinfastvinh-nghean.com/wp-content/uploads/2022/02/vf7.png",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "14",
+      "category": "Xe Điện",
+      "name": "VinFast Vf8",
+      "price": 6000000,
+      "image": "https://vinfastnewway.com.vn/wp-content/uploads/2022/08/vinfast-vf-8-mau-xam.jpg",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "15",
+      "category": "Xe Điện",
+      "name": "VinFast Vf9",
+      "price": 7000000,
+      "image": "https://vinfastbinhthanh.com/wp-content/uploads/2024/01/vinfast_vf9_deep_ocean.webp",
+      "desc": "Mot Ta San Pham "
+    },
+    {
+      "id": "16",
+      "category": "Xe Điện",
+      "name": "VinFast wild",
+      "price": 8000000,
+      "image": "https://vietnaminsider.vn/wp-content/uploads/2024/01/IMG_1098.webp",
+      "desc": "Mot Ta San Pham "
+    }
+  ],
+  "users": [
+    {
+      "email": "lovisong@gmail.com",
+      "password": "$2a$10$XlagoZLOy/LqUos0MvKAB.5yvpUXDn6/KCjXg.3ZeizT6PAjZy0.W",
+      "username": "hieu",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "email": "hieuptph36555@fpt.edu.vn",
+      "password": "$2a$10$uLAq8qI//T2u.cjfu2JDzeZ1oyj5X78jtFzNWmGPcoCsXX3ms74sm",
+      "username": "hieudz",
+      "confirmPassword": "123456",
+      "id": 2
+    },
+    {
+      "email": "hie222@gmail.com",
+      "password": "$2a$10$CN0Y8YoGtRmoPcxAshvEb.sbJXw5kMIG4rvYdIgXBZr0OdqwJG3RW",
+      "username": "hieuadmin",
+      "confirmPassword": "123456",
+      "id": 3
+    },
+    {
+      "email": "lovisong1@gmail.com",
+      "password": "$2a$10$DH.ACEcUDybUKOvBSejF/...KNdehpn43uy22hiZAbUMDqEpoSfcW",
+      "username": "hieu1",
+      "confirmPassword": "1234567",
+      "id": 4
+    },
+    {
+      "email": "lovisong111@gmail.com",
+      "password": "$2a$10$9mGp9Z5UOv6r4mCGSnOmy.hJG/hJih5ciek1lAgGk27O9Jr8f924a",
+      "username": "hieu",
+      "confirmPassword": "123456",
+      "id": 5
+    }
+  ]
+}
