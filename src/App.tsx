@@ -5,12 +5,15 @@ import NotFoundPage from './pages/notFound';
 import ClientLayout from './layout/client';
 import ProductsCard from './pages/client/productsCard';
 import AdminPage from './layout/admin';
-import ListTable from './pages/list';
 import Detail from './pages/client/detail';
 import PrivateRoute from './compoment/privateRoter';
 import RegisterPage from './pages/register';
 import LoginPage from './pages/login';
-import TestRe from './pages/registerTest';
+import HomePage from './pages/client/homePage';
+import CarList from './pages/client/shop';
+import AddProduct from './pages/admin/addProduct';
+import ListTable from 'src/pages/list';
+import EditProduct from './pages/admin/editProduct';
 
 // const token = localStorage.getItem('token');
 // const isAdmin = token ? JSON.parse(atob(token.split('.')[1])).role === 'admin' : false;
@@ -22,19 +25,24 @@ let element = [
     children: [
       {
         path: "",
-        element: <ProductsCard />
+        element: <HomePage />
       },
       {
         path: "product/:id",
         element: <Detail />
       },
+      
       {
         path: "login",
         element: <LoginPage />
       },
       {
+        path: "shop",
+        element: <CarList />
+      },
+      {
         path: "test",
-        element: <TestRe />
+        element: <HomePage />
       },
       {
         path: "register",
@@ -50,7 +58,15 @@ let element = [
       {
         path: "",
         element: <ListTable />
-      }
+      },
+      {
+        path: "create",
+        element: <AddProduct />
+      },
+      {
+        path: "edit/:id",
+        element: <EditProduct />
+      },
     ]
     
   },

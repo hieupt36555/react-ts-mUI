@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import { Outlet, BrowserRouter as Router, useRoutes } from 'react-router-dom';
+import Banner from "src/compoment/banner";
 import Footer from "src/compoment/footer";
 import Header from "src/compoment/header";
 const drawerWidth = 240;
@@ -20,9 +21,10 @@ function ClientLayout() {
                 <Outlet/>
               </Box>
             </Container>
-            <Footer />
         </Typography>
+        <Footer />
       </Box>
+      
     </Box>
   );
 

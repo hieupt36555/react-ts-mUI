@@ -1,12 +1,4 @@
-// import AppBar from '@mui/material/AppBar';
-// import Toolbar from '@mui/material/Toolbar';
-// import IconButton from '@mui/material/IconButton';
-// import Button from '@mui/material/Button';
-// import Box from '@mui/material/Box';
-// import { Link as RouterLink } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-// import { Avatar, Typography } from '@mui/material';
-// import { AccountCircle } from '@mui/icons-material';
+
 import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Box, Menu, MenuItem } from '@mui/material';
 import AccountCircle from '@mui/icons-material/AccountCircle';
@@ -38,18 +30,21 @@ function Header() {
   return (
   <AppBar position="fixed" sx={{ backgroundColor: '#fff', color: '#000' }}>
   <Toolbar>
-    <Typography variant="h6" sx={{ flexGrow: 1 }}>
+    <Typography component={Link} to={'/'} variant="h6" sx={{ flexGrow: 1, color: 'black' }}>
       VinFast Auto
     </Typography>
     <Box sx={{ display: 'flex', flexGrow: 1 }}>
-      <Link to="/" style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
-        Home
+    <Link to="/about" style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
+        Giới Thiệu
       </Link>
       <Link to="/shop" style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
-        Shop
+        Sản Phẩm
       </Link>
-      <Link to="/about" style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
-        About
+      <Link to="/map" style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
+        Trạm Sạc
+      </Link>
+      <Link to="/warranty " style={{ margin: '0 15px', color: 'black', textDecoration: 'none' }}>
+        Dịch Vụ Bảo Hành
       </Link>
     </Box>
     <IconButton color="inherit" onClick={handleMenuClick}>

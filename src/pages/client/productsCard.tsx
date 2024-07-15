@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Alert from '@mui/material/Alert';
 import Product from 'src/types/IProducts';
 import axiosInstance from 'src/config/axios';
+import Banner from 'src/compoment/banner';
 
 
 
@@ -35,6 +36,7 @@ const ProductsCard: React.FC = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
+             <Banner/>
             <Grid container spacing={2}>
                 {products.map((product) => (
                     <Grid item xs={12} sm={6} md={4} key={product.id}>

@@ -12,14 +12,16 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../App.css'
 import { LinearProgress } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
-
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import EditIcon from '@mui/icons-material/Edit';
 
 export default function ListTable() {
 
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -40,17 +42,25 @@ export default function ListTable() {
     if (error) return <p>{error}</p>;
 
     const handleDeleteProduct = async (id: string) => {
-        const confirmDelete = window.confirm('Are you sure you want to delete this product?');
+        const confirmDelete = window.confirm('Bạn Có Chắc Chắn Muốn Xóa Sản Phẩm Này?');
         if (confirmDelete) {
             try {
                 await axios.delete(`http://localhost:3000/products/${id}`);
-                console.log('Product deleted successfully');
-                // fetchProducts(); 
+                Swal.fire({
+                    icon: "success",
+                    title: "Đã Xóa Thành Công!",
+                    showConfirmButton: false,
+                    timer: 1100
+                  });
             } catch (error) {
                 console.error('Error deleting product:', error);
+                Swal.fire({
+                    title: "Xóa Thất Bại!",
+                    text: "Lỗi: "+error,
+                    icon: "error"
+                });
             }
         }
-
     };
 
 
@@ -82,11 +92,11 @@ export default function ListTable() {
                             </TableCell>
                             <TableCell align="center" > {product.price}$</TableCell>
                             <TableCell align="center"> {product.desc}</TableCell>
-                            <TableCell align="center" >
-                                <Button variant="contained" color="success" startIcon={<GridSearchIcon />} component={RouterLink} to={`/product/${product.id}`}  >
-                                    Profile
+                            <TableCell align="center"  >
+                                <Button sx={{margin: '10px'}} variant="contained" color="success" startIcon={<EditIcon />} component={RouterLink} to={`/admin/edit/${product.id}`}  >
+                                    Edit
                                 </Button>
-                                <Button variant="outlined" color="error" startIcon={<GridDeleteIcon />} className='mg-left5' onClick={() => handleDeleteProduct(product.id)}   >
+                                <Button sx={{margin: '10px'}} variant="outlined" color="error" startIcon={<GridDeleteIcon />} className='mg-left5' onClick={() => handleDeleteProduct(product.id)}   >
                                     Delete
                                 </Button>
                             </TableCell>
